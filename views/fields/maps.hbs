@@ -1,0 +1,18 @@
+<div class="container mt-5">
+    <div class="row justify-content-between">
+        <h1 class="col-md-6">CAMPOS DE FUTBOL</h1>
+        <div class="col-md-2">
+            {{#if organizer}}
+                <a href="/campos/crear" class="btn btn-success mt-2">Crear Campo</a>
+            {{/if}}
+        </div>
+    </div>
+    <hr>
+
+    <figure id="map"></figure>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="/services/googlemaps.service.js"></script>
+<script src="/js/script.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=init"></script>
